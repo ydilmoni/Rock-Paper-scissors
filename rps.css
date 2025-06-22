@@ -1,0 +1,17 @@
+.hide {
+    display: none;
+}
+.img{
+    border-radius: 35%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+}
+.move_img{
+    border-radius: 35%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+}

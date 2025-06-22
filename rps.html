@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rps.css">
+    <script src="rps.js"></script>
+</head>
+<body align="center" id="body">
+    <div id="header">
+        <h1>Rock Paper Scissors</h1>
+        <div id="round_info" style="display: inline-block;"><h2>Round: <span id="round"></span></h2></div>
+    </div>
+    <div align="center" id="score-info" style="margin-right: 300px; margin-left: 300px;">
+        <div id="player_info" style="float: left;">
+            <h2>Player score: <span id="player_acore">0</span></h2>
+            <h3 id="player_precent"></h3>
+        </div>
+        <div id="draw_info" style="display: inline-block;">
+            <h2>Draw: <span id="draw">0</span></h2>
+            <h3 id="draw_precent"></h3>
+        </div>
+        <div id="computer_info" style="float: right;">
+            <h2>Computer score: <span id="computer_acore">0</span></h2>
+            <h3 id="computer_precent"></h3>
+        </div>
+    </div>
+    <div align="center" >
+        <h2 id="h2result"><span id="result" style="background-color:white;"> </span></h2>
+    </div>
+    <div id="buttons" align="center">
+        <h2>Choose your move</h2>
+        <div >
+            <img class="img" onclick="play('Paper')" src="Paper.png" id="paper" >
+            <img class="img" onclick="play('Rock')" src="Rock.png" id="rock" >
+            <img class="img" onclick="play('Scissors')" src="Scissors.png" id="scissors" >
+        </div>
+    </div>
+    <div id="move-info" align="center" style="margin-right: 300px; margin-left: 300px;">
+        <div style="float: left;">
+            <h2>player move: <span id="playerMove"></span></h2>
+            <br>
+            <img width="100" height="100" id="playerMovePic" class="move_img hide" src="">
+        </div>
+        <div style="float: right;">
+            <h2>computer move: <span id="computerMove"></span></h2>
+            <br>
+            <img width="100" height="100" id="computerMovePic" class="move_img hide" src="">
+        </div>
+    </div>
+</body>
+</html>
