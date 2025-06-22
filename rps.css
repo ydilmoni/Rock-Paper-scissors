@@ -27,3 +27,34 @@
 .bg-computer-win {
   background-color: #d17777 !important;
 }
+#result_table_div {
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    min-width: 350px;
+}
+#resultTable {
+    width: 100%;
+    table-layout: fixed;
+}
+#resultTable th, #resultTable td {
+    padding: 8px 10px;
+    text-align: center;
+    /* word-break: break-word; */
+}
+#resultTable tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#result_table_div {
+    max-height: 200px;
+    overflow-y: auto;
+    width: 40%;
+    display: inline-block;
+}
+#resultTable th {
+    position: sticky;
+    top: 0;
+    background: #eedf54;
+    z-index: 2;
+}
