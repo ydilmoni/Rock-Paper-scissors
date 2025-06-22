@@ -15,3 +15,15 @@
     width: 100px;
     height: 100px;
 }
+
+.bg-draw {
+  background-color: #3f61be !important;
+}
+
+.bg-player-win {
+  background-color: #70d170 !important;
+}
+
+.bg-computer-win {
+  background-color: #d17777 !important;
+}

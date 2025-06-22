@@ -28,31 +28,33 @@ function play(playerMove){
         document.getElementById("result").innerHTML = "Draw";
         draw++;
         document.getElementById("draw").innerHTML = draw;
-        bodyColorChange("yellow");
+        bodyColorChange("bg-draw");
     }
     else if(playerMove == "Rock" && computerMove == "Scissors" || playerMove == "Paper" && computerMove == "Rock" || playerMove == "Scissors" && computerMove == "Paper"){
         document.getElementById("result").innerHTML = "Player win";
         playerScore++;
         document.getElementById("player_acore").innerHTML = playerScore;
-        bodyColorChange("green");
+        bodyColorChange("bg-player-win");
     }
     else {
         document.getElementById("result").innerHTML = "Computer wins";
         computerScore++;
         document.getElementById("computer_acore").innerHTML = computerScore;
-        bodyColorChange("red");
+        bodyColorChange("bg-computer-win");
     }
     precent();
 }
-function bodyColorChange(color){
-    resultColorChange(color);
-    document.body.style.background = color;
+function bodyColorChange(className){
+    resultColorChange(className);
+    document.body.classList.remove("bg-draw", "bg-player-win", "bg-computer-win");
+    document.body.classList.add(className);
     setTimeout(() => {
-        document.body.style.background = "white";
-    },200);
+        document.body.classList.remove(className);
+    }, 200);
 }
-function resultColorChange(color){
-    document.getElementById("result").style.backgroundColor = color;
+function resultColorChange(className){
+    document.getElementById("result").classList.remove("bg-draw", "bg-player-win", "bg-computer-win");
+    document.getElementById("result").classList.add(className);
 }
 function precent(){
     var playerScore = Number(document.getElementById("player_acore").innerHTML);
